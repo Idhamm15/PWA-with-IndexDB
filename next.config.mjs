@@ -1,9 +1,9 @@
-import withPWA from 'next-pwa';
-
-const nextConfig = withPWA({
-  dest: 'public',
-  disable: false,
-//   disable: process.env.NODE_ENV === 'development', // Menonaktifkan PWA saat pengembangan
-});
-
-export default nextConfig;
+/** @type {import('postcss-load-config').Config} */
+const config = {
+      plugins: {
+        tailwindcss: {},
+      },
+    };
+    
+export default config;
+    
